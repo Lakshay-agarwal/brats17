@@ -74,9 +74,9 @@ if __name__ == '__main__':
     year = 15 # or 17
     
     if(year == 15):
-        s_folder = 'result15'
-        g_folder = '/home/guotwang/data/BRATS2015_Training'
-        patient_names_file = 'config15/test_names.txt'
+        s_folder = '/content/brats17/result15'
+        g_folder = '/content/Training'
+        patient_names_file = '/content/brats17/config15/test_names_temp.txt'
     else:
         s_folder = 'result17'
         g_folder = '/home/guotwang/data/Brats17TrainingData'
