@@ -427,3 +427,23 @@ def binary_dice3d(s,g):
     s2 = g.sum()
     dice = (2.0*s0 + 1e-10)/(s1 + s2 + 1e-10)
     return dice
+
+def sensitivity(s,g):
+    prod = np.multiply(g, s)
+    s0 = prod.sum()
+    s1 = g.sum()
+    
+    if(s1 == 0):
+        return 1
+    else:
+        return (s0 + 1e-10)/(s1 + 1e-10)
+
+def specificity(s,g):
+    prod = np.multiply(g == 0, s == 0)
+    s0 = prod.sum()
+    s1 = np.sum(g == 0)
+    
+    if(s1 == 0):
+        return 1
+    else:
+        return (s0 + 1e-10)/(s1 + 1e-10)
