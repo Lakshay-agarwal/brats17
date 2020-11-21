@@ -1,2 +1,10 @@
-HGG/brats_tcia_pat417_0001
+HGG/brats_tcia_pat170_0002
+HGG/brats_tcia_pat178_0002
+HGG/brats_tcia_pat198_0283
+HGG/brats_tcia_pat199_0001
 HGG/brats_tcia_pat205_0001
+HGG/brats_tcia_pat277_0001
+HGG/brats_tcia_pat374_0356
+HGG/brats_tcia_pat396_0117
+HGG/brats_tcia_pat417_0001
+HGG/brats_tcia_pat473_0001
