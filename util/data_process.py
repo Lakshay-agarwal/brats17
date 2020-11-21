@@ -447,3 +447,17 @@ def specificity(s,g):
         return 1
     else:
         return (s0 + 1e-10)/(s1 + 1e-10)
+
+def accuracy(s,g):
+    prod1 = np.multiply(g, s)
+    prod2 = np.multiply(g == 0, s == 0)
+    tp = prod1.sum()
+    tn = prod2.sum()
+    s0 = g.sum()
+    s1 = np.sum(g == 0)
+    
+    if((s0 + s1) == 0):
+        return 1
+    else:
+        return (tp + tn + 1e-10)/(s0 + s1 + 1e-10) 
+        
